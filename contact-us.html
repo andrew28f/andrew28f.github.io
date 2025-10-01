@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/form-style.css">
+    <title>Contato</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">StartupAI</a>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="services.html">Serviços</a></li>
+                <li class="navbar-item"><a href="portfolio.html">Portfólio</a></li>
+                <li class="navbar-item"><a href="articles.html">Artigos</a></li>
+                <li class="navbar-item"><a href="about-us.html">Sobre</a></li>
+            </ul>
+            <a href="contact-us.html" class="contact">Contate-nos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+        <h2>Entre em contato conosco</h2>
+        <p>Preencha o formulário abaixo e nossa equipe retornará o mais breve possível.</p>
+
+        <form action="contact.html" method="POST">
+            <!-- Nome -->
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required minlength="3">
+
+            <!-- Email -->
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+            <!-- Telefone -->
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" 
+                pattern="\(\d{2}\)\s\d{5}-\d{4}" required>
+
+            <!-- Motivo do contato -->
+            <label for="subject">Motivo do contato</label>
+            <select id="subject" name="subject" required>
+                <option value="">Selecione uma opção</option>
+                <option value="support">Suporte técnico</option>
+                <option value="partnership">Parcerias</option>
+                <option value="sales">Solicitar orçamento</option>
+                <option value="other">Outros</option>
+            </select>
+
+            <!-- Preferência de contato -->
+            <p>Como prefere ser contatado?</p>
+            <label>
+                <input type="radio" name="contact_pref" value="email" required>
+                E-mail
+            </label>
+            <label>
+                <input type="radio" name="contact_pref" value="phone">
+                Telefone
+            </label>
+
+            <!-- Newsletter -->
+            <label>
+                <input type="checkbox" name="newsletter">
+                Desejo receber novidades por e-mail
+            </label>
+
+            <!-- Mensagem -->
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." 
+                    required minlength="10"></textarea>
+
+            <!-- Botões -->
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+        <p>StartupAI &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

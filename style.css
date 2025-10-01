@@ -1,0 +1,269 @@
+:root {
+    --font-family-primary: "Quicksand", sans-serif;
+    --font-family-secundary: "Mona Sans", sans-serif;
+    --color-bg-white: #e8e8e8;
+    --color-text-black: #0D0D0D;
+    --color-text-gray: rgb(61, 61, 61);
+    --color-purple-link-hover: #a156f2;
+    --color-purple-button: #9140e7;
+}
+
+body {
+    background-color: var(--color-bg-white);
+    color: var(--color-text-gray);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    border: 3px solid #ad40e7;
+    margin: 48px auto;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 75%;
+    margin: 0 auto;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--color-purple-link-hover);
+}
+
+.navbar-items {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 0 12px;
+}
+
+.contact {
+    background-color: var(--color-text-black);
+    color: var(--color-bg-white);
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.contact:hover {
+    background-color: var(--color-text-gray);
+    color: var(--color-bg-white);
+}
+
+/* Hero Section*/
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero-section-title {
+    font-family: var(--font-family-secundary);
+    font-size: 2em;
+    color: black;
+}
+
+.hero-section-subtitle {
+    font-weight: 500;
+    margin-top: 0;
+    color: gray;
+}
+ 
+.btn {
+    background-color: var(--color-purple-button);
+    color: var(--color-bg-white);
+    border-radius: 20px;
+    padding: 12px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-purple-link-hover);
+}
+
+/* Financial Plans */
+
+.pricing-plans-title {
+    font-size: 3em;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.pricing-plan-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    height: 300px;
+    padding: 10px 15px;
+    margin: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid rgb(214, 214, 214);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    transition: background 0.3s, boder-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background: linear-gradient(to bottom, var(--color-purple-button), #ad40e7);
+    border-color: var(--color-purple-button);
+    color: var(--color-bg-white);
+}
+
+.pricing-plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.plan-price {
+    font-size: 1.4em;
+}
+
+.plan-description {
+    font-weight: 500;
+}
+
+/* Portfolio Examples */
+
+.portfolio-examples {
+    height: fit-content;
+}
+
+.portfolio-title {
+    font-size: 2.3em;
+    background: linear-gradient(to right, var(--color-purple-button), #b258e3);
+    background-clip: text;
+    color: transparent;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 170px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.client-name, .client-role {
+    color: var(--color-text-black);
+    font-weight: 700;
+}
+
+.client-role {
+    font-size: 1.2em;
+}
+
+.review-card > p, .client-name, .client-role {
+    margin: 0;
+}
+
+.cta-card {
+    border-bottom: 2px solid var(--color-text-gray);
+    font-size: 1.2em;
+    width: fit-content;
+    transition: color 0.3s;
+}
+
+.cta-card:hover {
+    color: black;
+    border-color: black;
+}
+
+/* Articles */
+
+.article-card, .about-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 7% 0;
+}
+
+.article-content, .about-content {
+    position: absolute;
+    width: 40%;
+    padding: 3rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+
+.company-name {
+    font-weight: 700;
+}
+
+.reading-time {
+    font-weight: 400;
+}
+
+/* Article */
+.article-content {
+    right: 0;
+}
+
+/* About Us */
+
+.about-card {
+    flex-direction: row-reverse;
+}
+
+.about-content {
+    left: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem;
+    background-color: #0D0D0D;
+    text-align: center;
+}

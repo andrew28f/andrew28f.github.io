@@ -1,0 +1,115 @@
+:root {
+    --font-family-primary: "Quicksand", sans-serif;
+    --font-family-secundary: "Mona Sans", sans-serif;
+    --color-bg-white: #e8e8e8;
+    --color-text-black: #0D0D0D;
+    --color-text-gray: rgb(61, 61, 61);
+    --color-purple-link-hover: #a156f2;
+    --color-purple-button: #9140e7;
+}
+
+/* Fomulário de Contato */
+.contact-form {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-bg-white);
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.contact-form h2 {
+    font-family: var(--font-family-secundary);
+    font-size: 1.8rem;
+    color: var(--color-text-black);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact-form p {
+    color: var(--color-text-gray);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Inputs e Textarea */
+.contact-form label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-black);
+    margin: 1rem 0 0.5rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-purple-button);
+    box-shadow: 0 0 6px rgba(145, 64, 231, 0.4);
+}
+
+/* Radio e Checkbox */
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+    accent-color: var(--color-purple-button);
+}
+
+.contact-form p {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Botões */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-buttons button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-family-secundary);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Botão enviar */
+.form-buttons button[type="submit"] {
+    background-color: var(--color-purple-button);
+    color: #fff;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: var(--color-purple-link-hover);
+    transform: translateY(-2px);
+}
+
+/* Botão reset */
+.form-buttons button[type="reset"] {
+    background-color: #ccc;
+    color: var(--color-text-black);
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}

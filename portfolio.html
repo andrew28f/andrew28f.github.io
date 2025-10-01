@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            width: 100%;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        em {
+            color: #9140e7;
+            font-style: normal;
+        }
+
+        .portfolio-introduction {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 90vh;
+            background: url("./images/rede-neural-branco-big.jpg") no-repeat center center/cover;
+        }
+
+        .portfolio-introduction-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .portfolio-introduction > h1 {
+            font-family: "Mona Sans", sans-serif;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            max-width: 500px;
+        }
+
+        .info-data {
+            color: black;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .client-reviews {
+            display: flex;
+            justify-content: space-around;
+            padding: 48px 26px;
+        }
+
+        .client-reviews-text {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            height: fit-content;
+            padding: 16px 28px;
+        }
+
+        .client-reviews-text h2 {
+            font: 800 2.3rem "Mona Sans";
+            color: black;
+            line-height: 2.5rem;
+        }
+
+        .client-reviews-text p {
+            margin-top: -16px;
+        }
+
+        .review-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: fit-content;
+            width: 500px;
+            padding: 16px 28px;
+            background-color: white;
+            border-radius: 8px;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+        }
+
+        .client-role {
+            display: block;
+            font-size: .8rem;
+            color: gray;
+        }
+
+        picture {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: -5rem 0;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">StartupAI</a>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="services.html">Serviços</a></li>
+                <li class="navbar-item"><a href="portfolio.html">Portfólio</a></li>
+                <li class="navbar-item"><a href="articles.html">Artigos</a></li>
+                <li class="navbar-item"><a href="about-us.html">Sobre</a></li>
+            </ul>
+            <a href="contact-us.html" class="contact">Contate-nos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-introduction">
+            <div class="portfolio-introduction-content">
+                <h1>Nós criamos resultados reais e eficiência inteligente com <em>IA</em></h1>
+                <div class="portfolio-info">
+                    <div class="info-card"><span class="info-data">300<em>+</em></span> projetos concluídos com sucesso</div>
+                    <div class="info-card"><span class="info-data">95<em>%</em></span> de satisfação dos clientes</div>
+                    <div class="info-card">Atuação em mais de <span class="info-data">15</span> países</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="client-reviews">
+            <div class="client-reviews-text">
+                <h2>Nossos clientes amam nosso trabalho</h2>
+                <p>Nossos clientes confiam em nossas soluções e compartilham suas experiências positivas todos os dias. Confira suas avaliações e descubra como podemos transformar também o seu negócio!</p>
+                <a href="#" class="cta-card">Contrate nossos serviços</a>
+            </div>
+
+            <div class="review-container">
+                <p class="review">Trabalhar com a equipe desta startup foi uma das melhores decisões que tomamos. A solução de IA desenvolvida para o nosso negócio não apenas otimizou processos internos, mas também nos ajudou a reduzir custos e aumentar a produtividade da equipe. O suporte é ágil, atencioso e sempre disposto a entender nossas necessidades. Hoje conseguimos entregar mais valor aos nossos clientes e sentimos que temos um parceiro de tecnologia confiável para o futuro.</p>
+                <p><span class="client-name">Mariana Costa</span> <span class="client-role">Diretora de Operações na TechPlus</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>StartupAI &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

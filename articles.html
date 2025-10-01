@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Artigos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            width: 70%;
+        }
+
+        picture {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 2.5rem 0;
+        }
+
+        img {
+            width: 55%;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .article-title {
+            font-family: "Mona Sans", sans-serif;
+            font-size: 2.2rem;
+            color: black;
+        }
+
+        .description {
+            color: black;
+            font-weight: 600;
+        }
+
+        article p {
+            font-weight: 500;
+        }
+
+        .btn-load {
+            width: fit-content;
+            padding: 8px 16px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            background-color: #9140e7;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-load:hover {
+            background-color: #a156f2;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">StartupAI</a>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="services.html">Serviços</a></li>
+                <li class="navbar-item"><a href="portfolio.html">Portfólio</a></li>
+                <li class="navbar-item"><a href="articles.html">Artigos</a></li>
+                <li class="navbar-item"><a href="about-us.html">Sobre</a></li>
+            </ul>
+            <a href="contact-us.html" class="contact">Contate-nos</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1 class="article-title">Como a Inteligência Artificial pode revolucionar o seu negócio</h1>
+
+            <picture>
+                <source media="(max-width: 734px)" srcset="./images/inteligencia-artificial-small.jpg">
+                <img src="images/inteligencia-articial.jpg" alt="Moça utilizando um óculos virtual">
+            </picture>
+
+            <p class="description">Descubra como soluções de IA podem automatizar processos, aumentar a produtividade
+            e abrir novas oportunidades de crescimento para sua empresa. Uma leitura indispensável para quem busca inovação!</p>
+
+            <p>A Inteligência Artificial deixou de ser apenas uma tendência futurista para se tornar uma das maiores forças de transformação no mundo dos negócios. De otimizar tarefas repetitivas até oferecer insights estratégicos, a IA abre espaço para que empresas de todos os portes inovem, reduzam custos e alcancem resultados que antes pareciam impossíveis.</p>
+            <p>Além de automatizar processos, a Inteligência Artificial tem o poder de identificar padrões ocultos em grandes volumes de dados, permitindo decisões mais rápidas e assertivas. Empresas que adotam essa tecnologia conseguem se destacar no mercado, oferecendo experiências personalizadas aos clientes e criando soluções inovadoras que impulsionam o crescimento.</p>
+        </article>
+
+        <div class="btn-load">Continuar lendo</div>
+
+    </main>
+
+    <footer>
+        <p>StartupAI &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

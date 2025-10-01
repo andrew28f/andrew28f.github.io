@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Serviços</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        hr {
+            border-width: 1px;
+            margin: 8px 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pricing-plan-card {
+            text-align: left;
+        }
+
+        .pricing-plans-title {
+            color: black;
+        }
+
+        .pricing-plans {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pricing-plan-cards {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 25%;
+            height: fit-content;
+            padding: 10px 20px;
+            margin: 15px;
+            border-radius: 8px;
+            border: 2px solid rgb(214, 214, 214);
+            box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+        }
+
+        .pricing-plan-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: fit-content;
+        }
+
+        .pricing-plan-card-list-title {
+            color: black;
+            font-size: 1rem;
+            font-weight: 600
+        }
+
+        .pricing-plan-card-list {
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
+        .pricing-plan-card-list li {
+            padding: 6px 0;
+        }
+
+        .plan-title {
+            color: black;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .plan-price {
+            color: black;
+            font-size: 1.6em;
+            margin: 16px auto;
+        }
+
+        .plan-price span {
+            color: gray;
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
+        .plan-description {
+            color: gray;
+            font-size: .8em;
+            font-weight: 500;
+        }
+
+        .cta-pricing-plan {
+            text-align: center;
+            background-color: #9140e7;
+            color: white;
+            padding: 6px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .cta-pricing-plan:hover {
+            background-color: #a156f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">StartupAI</a>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="services.html">Serviços</a></li>
+                <li class="navbar-item"><a href="portfolio.html">Portfólio</a></li>
+                <li class="navbar-item"><a href="articles.html">Artigos</a></li>
+                <li class="navbar-item"><a href="about-us.html">Sobre</a></li>
+            </ul>
+            <a href="contact-us.html" class="contact">Contate-nos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-plans">
+            <h2 class="pricing-plans-title">Consulte nossos planos</h2>
+            <div class="pricing-plan-cards">
+                    <div class="pricing-plan-card container">
+                        <h2 class="plan-title">Básico</h2>
+                        <p class="plan-description">Ideal para quem está começando.</p>
+                        <p class="plan-price">R$ 49,90<span>/mês</span></p>
+
+                        <a href="#" class="cta-pricing-plan">Adquirir</a>
+
+                        <p class="pricing-plan-card-list-title">Recursos disponíveis</p>
+                        <ul class="pricing-plan-card-list">
+                            <li>5 consultas de IA por mês</li>
+                            <li>Suporte por e-mail</li>
+                            <li>Relatórios básicos</li>
+                            <li>Acesso a 1 modelo de IA</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-plan-card container">
+                        <h2 class="plan-title">Padrão</h2>
+                        <p class="plan-description">Recomendado para pequenos negócios.</p>
+                        <p class="plan-price">R$ 99,90<span>/mês</span></p>
+                        
+                        <a href="#" class="cta-pricing-plan">Adquirir</a>
+
+                        <p class="pricing-plan-card-list-title">Recursos disponíveis</p>
+                        <ul class="pricing-plan-card-list">
+                            <li>50 consultas de IA por mês</li>
+                            <li>Suporte via chat e e-mail (horário comercial)</li>
+                            <li>Relatórios avançados</li>
+                            <li>Acesso a 3 modelos de IA</li>
+                            <li>Integrações básicas com APIs</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-plan-card container">
+                        <h2 class="plan-title">Empresarial</h2>
+                        <p class="plan-description">Solução completa para empresas.</p>
+                        <p class="plan-price">R$ 199,90<span>/mês</span></p>
+                        
+                        <a href="#" class="cta-pricing-plan">Adquirir</a>
+                        
+                        <p class="pricing-plan-card-list-title">Recursos disponíveis</p>
+                        <ul class="pricing-plan-card-list">
+                            <li>Consultas de IA ilimitadas</li>
+                            <li>Suporte 24/7 prioritário</li>
+                            <li>Relatórios personalizados e preditivos</li>
+                            <li>Acesso a todos os modelos de IA</li>
+                            <li>Integração completa com sistemas corporativos</li>
+                            <li>Treinamento de equipe incluso</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p>StartupAI &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
